@@ -8,7 +8,7 @@ The book argues that small-n management is not a smaller version of large-compan
 
 It is written for leaders operating in high-stakes, low-volume contexts: enterprise sales, strategic accounts, founder-led companies, specialized teams, executive hiring, supplier concentration, and any situation where a single event can reshape the whole operating picture.
 
-The PDF lays out the practical operating system: how to diagnose when you are in small-n territory, when statistics remain useful and when they mislead, how to reason causally from sparse evidence, how to size risk when you cannot diversify, and how to build the buffers and protocols that let a small system survive shocks.
+The PDF lays out the practical operating system in four parts: diagnose when you are in small-n territory, reason causally from sparse evidence, make decisions when you cannot diversify, and build the buffers and protocols that let a small system survive shocks.
 
 ## Files
 
