@@ -26,9 +26,9 @@ When your critical denominators are small (four major customers, twelve enterpri
 
 This isn't a difference in difficulty. It's a difference in kind, and most leaders operate across both worlds simultaneously without realizing they need different playbooks for each. Most managers have been handed a large-number toolkit for a small-number world. They feel data-driven and rigorous. They're using everything business school taught them. But science requires matching your methods to your environment, and until you can identify which world a given decision lives in, you cannot know which of your own conclusions to trust. The cost of the mismatch shows up everywhere: startups spending their last six months of runway on A/B tests that will never reach statistical significance, executives approving major investments from three high-variance data points, product teams explaining 40% quarterly swings that are mostly arithmetic, churn models built on a few dozen customers when the real issue is that one champion is about to leave. The danger is not that leaders ignore data. The danger is that they use data in forms their environment cannot support.
 
-And the distinction does not apply to whole organizations. Amazon has hundreds of millions of customers (pure large-n for retail operations), but its relationship with antitrust regulators is small-n. One DOJ lawsuit could reshape the company. The question is never "which mode am I in?" It is "which mode does this specific decision require?"
+And the dividing line does not run between organizations. It runs between decisions inside them. Amazon has hundreds of millions of customers (pure large-n for retail operations), but its relationship with antitrust regulators is small-n. One DOJ lawsuit could reshape the company. The question is never "which mode am I in?" It is "which mode does this specific decision require?"
 
-Which means the first skill of small-n management is not statistical at all. It is knowing what to count. The rest of this chapter is four recounts: what are you actually counting, is the count big enough, is the count real, and what does each unit cost when it moves.
+Which means the first skill of small-n management is not statistical at all. It is knowing what to count, and then counting again. The rest of this chapter asks five questions of any number you are about to trust: what are you actually counting, is the count big enough, is the count real, do the units move together, and what does each unit cost when it moves.
 
 ## What Are You Actually Counting?
 
@@ -88,7 +88,7 @@ Reversibility is not a fourth force. It is the multiplier on the other three. An
 
 ## The Small-n Diagnostic
 
-You have now run the whole diagnostic once, informally. Formalized, it is four questions, scored for any domain or decision:
+Formalize the last four of those questions and you have the Small-n Diagnostic. For any domain or decision, score four dimensions:
 
 1. **Count**: Fewer than 30 decision-relevant units?
 2. **Concentration**: Any single unit above 20% of the outcome or capacity? (A working scheme used throughout this book: at 15%, write the response protocol; at 20%, flag and monitor; at 25%, actively reduce.)
