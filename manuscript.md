@@ -59,22 +59,9 @@ The first diagnostic mistake is counting the wrong thing.
 
 Your company may have 500 employees, but if one regulatory approval determines whether the product can launch, your relevant n for that decision is one. You may have 10,000 users, but if 80% of revenue depends on six enterprise renewals, your renewal-risk n is six. Small-n is not about the size of the organization. It is about the denominator attached to the decision.
 
-To find the right denominator, ask three questions:
+Finding the right denominator takes three questions, asked in order. First, what outcome am I trying to reason about? Not "how is the business doing" in general, but the specific outcome: retention risk, revenue forecast, hiring success, operational resilience. Second, what are the independent or semi-independent units that produce that outcome? Those units are the things you would have to count to build a meaningful rate. And third, are those units comparable enough that aggregating them preserves meaning? If each one has fundamentally different characteristics (different deal sizes, different risk profiles, different decision-makers), a single rate destroys more information than it creates.
 
-**What outcome am I trying to reason about?** Not "how is the business doing" in general, but the specific outcome: retention risk, revenue forecast, hiring success, operational resilience.
-
-**What are the independent or semi-independent units that produce that outcome?** These are the things you'd need to count to build a meaningful rate or average.
-
-**Are those units comparable enough that aggregating them preserves meaning?** If each unit has fundamentally different characteristics (different deal sizes, different risk profiles, different decision-makers), aggregating them into a single rate destroys more information than it creates.
-
-Examples:
-
-- Forecasting self-serve conversion: n = visitors or trials, likely large-n.
-- Forecasting enterprise sales: n = active qualified deals, likely small-n.
-- Managing revenue concentration: n = revenue-weighted customers, not raw customer count. (Twelve customers where one is 60% of revenue is a different problem from twelve equal customers.)
-- Hiring an executive: n = credible candidates plus comparable prior hires, not total resumes received.
-
-Count the denominator for the decision, not the denominator that makes you feel bigger.
+Run a few decisions through the questions and the pattern shows itself. Forecasting self-serve conversion counts visitors and trials: comfortably large-n. Forecasting enterprise sales counts active qualified deals: almost certainly small-n. Managing revenue concentration counts revenue-weighted customers rather than raw customer count, because twelve customers where one is 60% of revenue is a different problem from twelve equal customers. Hiring an executive counts credible candidates and comparable past hires, not resumes received. Count the denominator for the decision, not the denominator that makes you feel bigger.
 
 The Singapore dashboard failed all three questions at once. The outcome that mattered was speed of payment. The units that produced it were real-time clinics. And the connected clinics were not comparable enough to aggregate, because nineteen of them could not produce the outcome at all. Nine percent was never a performance number. It was three fast clinics divided by twenty-two mixed ones: a denominator error wearing a percentage.
 
@@ -106,12 +93,7 @@ This is why the Rule of 30 cannot carry the diagnosis alone. A business with 50 
 
 Your three "independent" suppliers all ship through the same port. Your two "redundant" payment processors both depend on the same upstream bank. Five enterprise deals that all depend on the same CFO's budget approval. What looks like diversification is actually shared exposure. What you thought was three independent risks is actually one risk wearing three masks. Coupling makes apparent diversification fake, and the coupled recount can go all the way down: three suppliers through one port is, on the day the port closes, a denominator of one.
 
-These forces compound, but they are not identical. A business can have thin count without concentration (ten equal customers), concentration without coupling (one whale customer whose risk is genuinely independent), or coupling without thin count (fifty suppliers that all depend on the same shipping lane). Each combination requires a different response:
-
-- **Thin count alone**: Use structured judgment and scenario ranges; don't trust rates.
-- **Concentration alone**: Reduce exposure or build redundancy around the concentrated unit.
-- **Coupling alone**: Identify and break hidden shared dependencies.
-- **All three present**: Stop optimizing and shift fully into resilience mode.
+These forces compound, but they are not identical, and they do not call for the same medicine. A business can have thin count without concentration (ten equal customers), concentration without coupling (one whale whose risk is genuinely independent), or coupling without thin count (fifty suppliers that all depend on the same shipping lane). Thin count alone calls for structured judgment and scenario ranges in place of rates. Concentration alone calls for reducing the exposure or building redundancy around the concentrated unit. Coupling alone calls for finding the hidden shared dependency and breaking it. And when all three arrive together, the answer stops being analytical: stop optimizing and shift fully into resilience mode.
 
 ## The Price of Each Unit
 
