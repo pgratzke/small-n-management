@@ -1,10 +1,6 @@
+# Chapter 1: Why Sample Size Changes Strategy
 
-
-
-
-# Preface
-
-This book was born out of a single monthly business review.
+This book was born in a single monthly business review.
 
 I was leading a small, specialized team inside a major technology company. Our job was to support the company's most strategic and complex deals. Like every team in a data-obsessed culture, we measured everything. Our performance was tracked on a dashboard of metrics, reviewed by senior leadership every month.
 
@@ -14,24 +10,7 @@ The number was correct, but the conclusion was not. What went "wrong" was nothin
 
 In that moment, I realized I was living in a different universe from the executives on the call. They were managing with the law of large numbers, where statistics tell a reliable story. I was managing with the law of small numbers, where a single event can create seismic-level variance and statistics mislead.
 
-This realization sent me searching for a playbook. I went to the business section of the bookstore, looking for guides on how to manage in a high-stakes, low-volume world. I found nothing. Most of the management advice I found assumes you have the protection of averages. This book assumes you don't.
-
-My world (and likely your world) has none of that protection. It's a world where every customer is essential, every decision is critical, and every mistake has an outsized impact. It's a world where losing a single client can feel like an extinction-level event.
-
-This book is the playbook for that world. It is not about how to act like a smaller version of a big company. It is also not a book about leadership or managing people; it is a book about decisions and evidence when the numbers are small. It is about how to operate effectively when the standard toolkit fails you: when averages mislead, forecasts fail, and one event can reshape everything. It provides a new language to describe your environment and a practical operating system for navigating it.
-
-A note on examples: this book draws on three kinds of material. Some examples come from my direct operating experience; details have been changed but the situations are real. Some are composites, patterns I have seen repeated across teams and companies, assembled into a single illustrative scenario. And some are hypothetical math examples used to demonstrate a statistical or probabilistic point. A few cases, told under their real names, are drawn from the public record and sourced in the notes at the back. Everything else that reads like a case study is a composite unless stated otherwise. The patterns are real; the specific characters are not.
-
-
-# Chapter 1: Why Sample Size Changes Strategy
-
-At the turn of the millennium, some of the smartest money in American philanthropy went looking for what makes a great school. The pattern in the data was striking: small schools were dramatically overrepresented among the top performers. The conclusion seemed to follow, and the Gates Foundation, joined by others, committed well over a billion dollars to breaking large high schools into smaller ones.
-
-The pattern was real. It was also an artifact. Small schools were overrepresented among the best performers, and they were just as overrepresented among the worst, for the same reason: small denominators produce extreme results in both directions. A school with two hundred students swings further on luck alone, in either direction, than a school with two thousand. Rank schools by performance and the small ones crowd both ends of the list, not because small is good or bad, but because small is volatile. The statistician Howard Wainer, who documented the episode, called the formula behind it "the most dangerous equation": the variability of an average shrinks with the square root of the sample size, and almost nobody manages as if that were true.
-
-His companion example makes the mechanism unforgettable. The American counties with the highest kidney-cancer rates are small, rural counties. So are the counties with the lowest rates. Same cause, both tails.
-
-The foundation eventually moved on to other strategies. What should stop you is not that a philanthropy misread a ranking. It is that one of the most sophisticated, data-driven institutions on earth mistook a property of arithmetic for a property of schools, and the mistake did not distort a metric somewhere on a dashboard. It wrote the strategy. Sample size does not just add noise to your numbers. Below a certain count, it quietly takes over the story your numbers tell, and if you do not know where that line is, it starts making your decisions for you.
+The realization sent me searching for a playbook, and the business section of the bookstore did not have one. Most management advice assumes you have the protection of averages: enough customers, deals, and data points that the noise cancels and the dashboards tell the truth. This book assumes you don't. It is not about acting like a smaller version of a big company, and it is not a book about leadership or managing people. It is a book about decisions and evidence when the numbers are small, written for the world where every customer is essential, every decision is critical, and losing a single client can feel like an extinction-level event.
 
 ## Two Worlds, One Dividing Line
 
@@ -41,7 +20,7 @@ When your critical denominators are large (hundreds of customers, thousands of u
 
 The operational consequence is profound. A large-denominator system can be treated as a machine. A 2% improvement in conversion, applied across 500,000 visitors, produces a result you can bank on. A new onboarding flow tested on 10,000 users gives a stable answer within days. You can hire against a forecast, because the forecast is narrow enough to plan around. Large-n environments reward optimization: find the bottleneck, measure it, improve it, measure again. This is the world that produced Six Sigma, A/B testing, dashboard KPIs, conversion funnels, and machine learning models, and it is the world business schools teach almost exclusively. The implicit promise: collect enough data, and you can manage anything. The promise is real, if you actually have enough data.
 
-You met the other world in the preface. A team responsible for four company-defining deals a year posts a 94% month-over-month decline in Germany, and a senior leader asks what went wrong. Nothing went wrong. When the denominator is four per year, the most likely number of closings in any given month is zero. The deals close when they close; the dashboard renders normal physics as catastrophe. Two deals might land in the same week next quarter, and the same dashboard will render noise as triumph.
+My Germany team lived in the other world. With four deals a year, the most likely number of closings in any given month is zero. The deals close when they close; the dashboard renders normal physics as catastrophe. Two deals might land in the same week next quarter, and the same dashboard will render noise as triumph.
 
 When your critical denominators are small (four major customers, twelve enterprise deals, three key relationships), the machine metaphor breaks. A 2% improvement means nothing when the next quarter depends on whether three specific humans say yes or no. You cannot A/B test with twelve customers. You cannot forecast with four deals. You cannot set a target and manage toward it, because the gap between best-case and worst-case is wider than the target itself. Small-n environments do not reward optimization. They punish fragility. The world is not a machine; it is a sequence of discrete, consequential events, each with its own causes, its own characters, and its own timing, and one departure can restructure everything.
 
@@ -76,6 +55,8 @@ Suppose the count is right. The second question is whether it is large enough to
 With 1,200 customers and a 10% churn rate, your 95% confidence interval sits comfortably between 8.3% and 11.7%. Shrink to 12 customers with the same underlying churn, and that band widens dramatically, spanning roughly from zero to over 35%. The confidence interval is now wider than the entire range of plausible outcomes. With four customers, one departure moves your rate by 25%. You're not watching business trends. You're watching variance amplified by tiny denominators. Thin count makes measurement noisy.
 
 Thin count also creates a binary rhythm. If you average four major product launches per year, the most likely outcome for any given quarter is zero or one, each with about 37% probability. Long quiet periods and sudden clusters aren't anomalies. They're the expected pattern. With one qualified engineer, one approved vendor, or one compliant platform, work runs in single lanes. When that lane blocks, everything waits. Outcomes become binary: pass or fail.
+
+The cost of ignoring this arithmetic scales with the budget behind it. In the early 2000s, the Gates Foundation found that America's best-performing high schools were disproportionately small, and funded the break-up of large schools into smaller ones: more than a billion dollars against a pattern that was real and meant nothing, because small schools were just as overrepresented among the worst performers. Small units crowd both ends of every ranking, not because small is good or bad, but because small is volatile. The statistician Howard Wainer, documenting the episode, called the formula behind it "the most dangerous equation": the variability of an average shrinks with the square root of the sample size, and almost nobody manages as if that were true.
 
 The working heuristic is the Rule of 30: below roughly 30 observations, many standard statistical approximations become fragile. But 30 is where the diagnosis starts, not where it ends, because a count can be large enough and still be a lie. That is the next recount.
 
@@ -384,7 +365,7 @@ This chapter is about that question. Chapter 2 gave you an honest picture of wha
 
 ## A Portfolio of One
 
-A venture capitalist invests in thirty companies. Twenty-five return zero, and the venture capitalist does not mind: the five successes pay for the fund. This is not recklessness. It is the correct application of expected value to a portfolio, exactly the way the executive's dashboard from the preface was the correct application of averages to a portfolio of teams. Expected value answers a specific question: what would this bet return, on average, if I could make it many times?
+A venture capitalist invests in thirty companies. Twenty-five return zero, and the venture capitalist does not mind: the five successes pay for the fund. This is not recklessness. It is the correct application of expected value to a portfolio, exactly the way the executive's dashboard from the opening pages of this book was the correct application of averages to a portfolio of teams. Expected value answers a specific question: what would this bet return, on average, if I could make it many times?
 
 You are one of the thirty companies. You have a portfolio of one. If the fund loses you, the fund continues. You do not.
 
@@ -800,11 +781,16 @@ Before you go, take the absolution this book owes you: the wild chart you once s
 You manage four customers, or twelve deals, or three key relationships. You don't manage statistics. You manage specific humans making specific decisions for specific reasons. Now you have the tools to manage them well.
 
 
+# A Note on Examples
+
+This book draws on four kinds of material. Some examples come from my direct operating experience; details have been changed, but the situations are real. Some are composites: patterns I have seen repeated across teams and companies, assembled into a single illustrative scenario. Some are hypothetical math examples used to demonstrate a statistical or probabilistic point. And a few cases, told under their real names, are drawn from the public record and sourced in the notes. Everything else that reads like a case study is a composite unless stated otherwise. The patterns are real; the specific characters are not.
+
+
 # Notes
 
 These notes are deliberately light: sources for the named cases, the mathematics, and the ideas this book leans on, without academic apparatus. Each note is keyed to a phrase from the text.
 
-**Preface and Chapter 1**
+**Chapter 1**
 
 *"the law of small numbers"*: Amos Tversky and Daniel Kahneman, "Belief in the Law of Small Numbers," *Psychological Bulletin* 76, no. 2 (1971); see also Daniel Kahneman, *Thinking, Fast and Slow* (2011), chapter 10.
 

@@ -23,13 +23,13 @@ PDF = "small-n_management.pdf"
 
 # Distinct opener text used to locate each section's first page in pass 1.
 SECTION_MARKERS = {
-    "Preface": "born out of a single monthly business review",
-    "Chapter 1: Why Sample Size Changes Strategy": "went looking for what makes a great school",
+    "Chapter 1: Why Sample Size Changes Strategy": "born in a single monthly business review",
     "Chapter 2: Reasoning When Rates Lie": "The hardest number in my current job",
     "Chapter 3: Decision-Making When You Can't Diversify": "The proposal is on the table",
     "Chapter 4: The Operational Inversion": "The worst number I have ever owned",
     "Chapter 5: Translating Small-n Upward": "The first four chapters built an operating system",
     "Conclusion: Your Next Move": "Everything in this book reduces to three realities",
+    "A Note on Examples": "draws on four kinds of material",
     "Notes": "These notes are deliberately light",
     "How This Book Was Written": "the tools did real work, under direction",
     "About the Author": "Peter Gratzke has held Innovation",
@@ -157,7 +157,7 @@ def build_html(toc_pages):
     sections = parse_manuscript()
 
     page_rules, body, toc_entries = [], [], []
-    backmatter_titles = {"Notes", "How This Book Was Written"}
+    backmatter_titles = {"A Note on Examples", "Notes", "How This Book Was Written"}
 
     for idx, (title, lines) in enumerate(sections):
         label, display, head = split_title(title)
@@ -233,7 +233,7 @@ def build_html(toc_pages):
 <section class="front copyrightpage">
 <p>Copyright &copy; 2026 Peter Gratzke. All rights reserved.</p>
 <p>No part of this publication may be reproduced or distributed in any form without permission from the author, except for brief quotations used in reviews or commentary.</p>
-<p>Some names, identifying details, and figures have been changed; several cases are composites, as described in the preface. Cases told under real names are drawn from the public record and cited in the Notes.</p>
+<p>Some names, identifying details, and figures have been changed; several cases are composites, as described in the note on examples at the back. Cases told under real names are drawn from the public record and cited in the Notes.</p>
 <p>First edition, 2026. Set in Georgia.</p>
 </section>
 
