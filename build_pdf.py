@@ -31,7 +31,7 @@ SECTION_MARKERS = {
     "Conclusion: Your Next Move": "Everything in this book reduces to three realities",
     "A Note on Examples": "draws on four kinds of material",
     "Notes": "These notes are deliberately light",
-    "How This Book Was Written": "the tools did real work, under direction",
+    "Statement on the Use of AI": "used extensively during the drafting and revision",
     "About the Author": "Peter Gratzke has held Innovation",
 }
 
@@ -157,7 +157,7 @@ def build_html(toc_pages):
     sections = parse_manuscript()
 
     page_rules, body, toc_entries = [], [], []
-    backmatter_titles = {"A Note on Examples", "Notes", "How This Book Was Written"}
+    backmatter_titles = {"A Note on Examples", "Notes", "Statement on the Use of AI"}
 
     for idx, (title, lines) in enumerate(sections):
         label, display, head = split_title(title)

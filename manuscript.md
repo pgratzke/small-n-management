@@ -829,13 +829,9 @@ These notes are deliberately light: sources for the named cases, the mathematics
 *"Amazon famously banned slide decks"*: Colin Bryar and Bill Carr, *Working Backwards: Insights, Stories, and Secrets from Inside Amazon* (2021), on six-page narratives and the press-release-first (PR/FAQ) discipline.
 
 
-# How This Book Was Written
+# Statement on the Use of AI
 
-I build business cases for AI adoption for a living, and this book was written the way I advise clients to work: the tools did real work, under direction, and the judgment stayed human.
-
-Generative AI helped draft, restructure, and stress-test this manuscript. It challenged the arguments, hunted the inconsistencies, and pushed back on weak chapters until they were rebuilt. At one point it drafted a plausible story about my own life that had never happened. It read well. It was cut, because plausible is not the standard.
-
-This book argues that you should disown credit you did not earn, so let me be plain about the division of labor: the prose benefited from machine drafting; the experiences, the ideas, the confessions, and every judgment about what is true in these pages are mine. So is the responsibility for anything wrong in them.
+Generative AI tools were used extensively during the drafting and revision of this manuscript: drafting and restructuring prose, testing logical consistency, refining frameworks, and stress-testing the argument for clarity and precision. The ideas, judgments, conclusions, and final editorial decisions remain the author's own, and full responsibility for the work rests with the author.
 
 
 # About the Author
