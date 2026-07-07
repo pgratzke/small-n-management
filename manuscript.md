@@ -50,7 +50,7 @@ The Singapore dashboard failed all three questions at once. The outcome that mat
 
 ## Is the Count Big Enough?
 
-Suppose the count is right. The second question is whether it is large enough to carry the tools you are pointing at it. **Thin count**, the first of the three forces that drive small-n risk, means you have too few observations for rates or averages to stabilize.
+Suppose the count is right. The second question is whether it is large enough to carry the tools you are pointing at it. When it is not, you have **thin count**: too few observations for rates or averages to stabilize.
 
 With 1,200 customers and a 10% churn rate, your 95% confidence interval sits comfortably between 8.3% and 11.7%. Shrink to 12 customers with the same underlying churn, and that band widens dramatically, spanning roughly from zero to over 35%. The confidence interval is now wider than the entire range of plausible outcomes. With four customers, one departure moves your rate by 25%. You're not watching business trends. You're watching variance amplified by tiny denominators. Thin count makes measurement noisy.
 
@@ -62,7 +62,7 @@ The working heuristic is the Rule of 30: below roughly 30 observations, many sta
 
 ## Is the Count Real?
 
-**Concentration**, the second force, means one unit carries a disproportionate share of the outcome, and it quietly shrinks your denominator without changing what you count.
+**Concentration** means one unit carries a disproportionate share of the outcome. It quietly shrinks your denominator without changing what you count.
 
 With four customers, one loss eliminates 25% of revenue. With three critical suppliers, one disruption removes a third of capacity. Individual shocks don't fade into background noise. They define the background.
 
@@ -74,11 +74,11 @@ This is why the Rule of 30 cannot carry the diagnosis alone. A business with 50 
 
 ## Do the Units Move Together?
 
-**Coupling**, the third force, is the sneakiest recount of all: units that appear independent fail together.
+**Coupling** is the sneakiest recount of all: units that appear independent fail together.
 
 Your three "independent" suppliers all ship through the same port. Your two "redundant" payment processors both depend on the same upstream bank. Five enterprise deals that all depend on the same CFO's budget approval. What looks like diversification is actually shared exposure. What you thought was three independent risks is actually one risk wearing three masks. Coupling makes apparent diversification fake, and the coupled recount can go all the way down: three suppliers through one port is, on the day the port closes, a denominator of one.
 
-These forces compound, but they are not identical, and they do not call for the same medicine. A business can have thin count without concentration (ten equal customers), concentration without coupling (one whale whose risk is genuinely independent), or coupling without thin count (fifty suppliers that all depend on the same shipping lane). Thin count alone calls for structured judgment and scenario ranges in place of rates. Concentration alone calls for reducing the exposure or building redundancy around the concentrated unit. Coupling alone calls for finding the hidden shared dependency and breaking it. And when all three arrive together, the answer stops being analytical: stop optimizing and shift fully into resilience mode.
+Thin count, concentration, and coupling are the three forces that drive small-n risk. They compound, but they are not identical, and they do not call for the same medicine. A business can have thin count without concentration (ten equal customers), concentration without coupling (one whale whose risk is genuinely independent), or coupling without thin count (fifty suppliers that all depend on the same shipping lane). Thin count alone calls for structured judgment and scenario ranges in place of rates. Concentration alone calls for reducing the exposure or building redundancy around the concentrated unit. Coupling alone calls for finding the hidden shared dependency and breaking it. And when all three arrive together, the answer stops being analytical: stop optimizing and shift fully into resilience mode.
 
 ## The Price of Each Unit
 
