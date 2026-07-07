@@ -157,6 +157,11 @@ strong {
   h2 { font-size: 1.2rem; }
 }
 
+@page {
+  margin: 20mm 16mm;
+  @bottom-center { content: counter(page); font-family: Georgia, serif; font-size: 10px; color: #555; }
+}
+
 @media print {
   .container { max-width: none; padding: 0; }
   h1.chapter-title { page-break-before: always; }
