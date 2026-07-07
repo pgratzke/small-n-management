@@ -25,15 +25,13 @@ A note on examples: this book draws on three kinds of material. Some examples co
 
 # Chapter 1: Why Sample Size Changes Strategy
 
-I learned to count on a project in Singapore.
+At the turn of the millennium, some of the smartest money in American philanthropy went looking for what makes a great school. The pattern in the data was striking: small schools were dramatically overrepresented among the top performers. The conclusion seemed to follow, and the Gates Foundation, joined by others, committed well over a billion dollars to breaking large high schools into smaller ones.
 
-A large insurer was launching a new digital health service: automatic claims payments, triggered as policyholders received treatment. API integrations with clinic management systems, payment orchestration, fraud detection, all designed to execute within minutes of a patient visit.
+The pattern was real. It was also an artifact. Small schools were overrepresented among the best performers, and they were just as overrepresented among the worst, for the same reason: small denominators produce extreme results in both directions. A school with two hundred students swings further on luck alone, in either direction, than a school with two thousand. Rank schools by performance and the small ones crowd both ends of the list, not because small is good or bad, but because small is volatile. The statistician Howard Wainer, who documented the episode, called the formula behind it "the most dangerous equation": the variability of an average shrinks with the square root of the sample size, and almost nobody manages as if that were true.
 
-Three months after launch, the product lead presented the performance dashboard in our quarterly review. Automatic payment rate: nine percent. She wanted to understand what was failing in the matching engine.
+His companion example makes the mechanism unforgettable. The American counties with the highest kidney-cancer rates are small, rural counties. So are the counties with the lowest rates. Same cause, both tails.
 
-Nothing was failing in the matching engine. I asked how many clinics were connected. Twenty-two. I asked how many were transmitting patient data in real time. She did not know. We investigated. Three. Three clinics out of twenty-two were entering data as visits occurred. Eight were batch-entering every Friday. Eleven were submitting once a month, sometimes later. The real-time payment system was sitting idle, not because the technology could not process fast enough, but because the inputs arrived weeks after the patient had walked out, paid the co-pay, and moved on.
-
-The platform had no technology problem. It had a denominator problem that no one had measured. The number that mattered was not clinics connected. It was clinics operating in real time, and that number was three. Every conclusion drawn from the 9 percent, every proposed fix to the matching engine, every escalation on that review agenda, was reasoning about twenty-two things when the system contained three.
+The foundation eventually moved on to other strategies. What should stop you is not that a philanthropy misread a ranking. It is that one of the most sophisticated, data-driven institutions on earth mistook a property of arithmetic for a property of schools, and the mistake did not distort a metric somewhere on a dashboard. It wrote the strategy. Sample size does not just add noise to your numbers. Below a certain count, it quietly takes over the story your numbers tell, and if you do not know where that line is, it starts making your decisions for you.
 
 ## Two Worlds, One Dividing Line
 
@@ -55,7 +53,13 @@ Which means the first skill of small-n management is not statistical at all. It 
 
 ## What Are You Actually Counting?
 
-The first diagnostic mistake is counting the wrong thing.
+The first diagnostic mistake is counting the wrong thing. I made it myself, as an executive at a large insurer in Singapore.
+
+One of the products under my responsibility was a new digital health service: automatic claims payments, triggered as policyholders received treatment, with API integrations into clinic management systems designed to execute within minutes of a patient visit. Three months after launch, the product lead brought the performance dashboard to my quarterly review. Automatic payment rate: nine percent. She wanted to find what was failing in the matching engine.
+
+Nothing was failing in the matching engine. I asked how many clinics were connected: twenty-two. I asked how many were transmitting patient data in real time. She did not know. We investigated. Three. Eight clinics batch-entered every Friday; eleven submitted once a month, sometimes later. The real-time payment system was sitting idle, not because the technology could not process fast enough, but because the inputs arrived weeks after the patient had walked out, paid the co-pay, and moved on.
+
+The platform had no technology problem. It had a denominator problem that no one had measured. The number that mattered was not clinics connected but clinics operating in real time, and that number was three. Every conclusion drawn from the 9 percent was reasoning about twenty-two things when the system contained three. And the fix had nothing to do with the engine: it was getting nineteen clinics onto real-time entry, operational work that no amount of staring at the rate would have surfaced.
 
 Your company may have 500 employees, but if one regulatory approval determines whether the product can launch, your relevant n for that decision is one. You may have 10,000 users, but if 80% of revenue depends on six enterprise renewals, your renewal-risk n is six. Small-n is not about the size of the organization. It is about the denominator attached to the decision.
 
@@ -803,6 +807,8 @@ These notes are deliberately light: sources for the named cases, the mathematics
 **Preface and Chapter 1**
 
 *"the law of small numbers"*: Amos Tversky and Daniel Kahneman, "Belief in the Law of Small Numbers," *Psychological Bulletin* 76, no. 2 (1971); see also Daniel Kahneman, *Thinking, Fast and Slow* (2011), chapter 10.
+
+*"the most dangerous equation"*: Howard Wainer, "The Most Dangerous Equation," *American Scientist* 95, no. 3 (2007), which documents both the small-schools episode and the kidney-cancer counties. The equation is Abraham de Moivre's: the standard error of a mean shrinks with the square root of the sample size.
 
 *"spanning roughly from zero to over 35%"*: The width quoted is an exact (Clopper-Pearson) binomial interval around one observed churn among twelve customers. The familiar normal-approximation formula gives a narrower band (roughly 0 to 27%); at denominators this small, the approximation itself is part of the problem.
 
