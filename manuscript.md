@@ -422,7 +422,7 @@ Southwest runs thousands of flights a day, as large-n as operations get. But the
 
 The P&L tells you how last quarter went. It cannot tell you whether next quarter will survive contact with reality. Worse: it is backward-looking, rewards short-term cost optimization, and quietly pays a bonus for structural fragility, because every buffer trimmed and every redundancy cut shows up as margin. Southwest was not ignoring its instruments. Its instruments were applauding the very things that broke it.
 
-The inversion: manage structural health, not financial output. Output follows from structural soundness.
+The inversion: manage structural health, not financial output. Output depends on structural soundness.
 
 What the airline lacked was not data but an instrument on which an aging scheduling system could appear as something other than a saving. Companies that persist track a Coverage Index: a structural health score that follows concentration and coupling from Chapter 1 across critical dependencies, plus the buffers that determine whether a shock is absorbed or cascades. It asks the questions the P&L cannot.
 
@@ -450,7 +450,7 @@ A risk that no instrument can display does not get discussed, does not get funde
 
 ## Spend for Persistence, Not Efficiency
 
-An index changes nothing by itself. The hinge between measurement and survival is a budget rule: any investment that moves a Red to Yellow, or a Yellow to Green, is approved by default. Any cost cut that moves a Green to Yellow requires explicit sign-off on the risk being accepted.
+An index changes nothing by itself. The hinge between measurement and survival is a budget rule: any investment that moves a Red to Yellow, or a Yellow to Green, is approved by default. Any cost cut that moves a Green to Yellow requires explicit sign-off on the risk being accepted. Approved by default does not mean unlimited spend; it means the burden of proof reverses. The question is no longer "why fund this?" but "what exposure are we knowingly carrying if we do not?"
 
 Read the rule twice, because it inverts how most companies treat money. The default answer to resilience spending becomes yes. The default answer to efficiency gains that create exposure becomes a signature, with a name on it, acknowledging what was just sold. The pursuit of the optimized dollar is a bet that the system will never face a significant shock. Spend money to buy persistence, not to maximize current output.
 
