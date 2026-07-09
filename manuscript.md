@@ -55,9 +55,19 @@ And when you do not know which world you are in, start there.
 
 # Chapter 1: Why Sample Size Changes Strategy
 
-The meeting that opened this book can be explained by one mathematical relationship: the reliability of a measured number depends on sample size, and uncertainty shrinks only with the square root of the count. This chapter is about that relationship, and about everything on a standard dashboard that quietly assumes it away.
+Statistics began as an answer to practical uncertainty: how to divide the stakes of an unfinished game, how to price risk, how to reason when the outcome is not yet known. From the beginning, its power came from repetition. One throw of dice is noise. Many throws reveal a pattern. One customer loss is a story. Many losses become a rate. The great promise of statistics is that enough single events, counted together, can become usable knowledge.
+
+That promise has a condition attached, and the condition is sample size.
+
+The Germany meeting from the introduction can be explained by one mathematical relationship: the reliability of a measured number depends on how many observations produced it. When the count is large, chance has room to cancel itself. When the count is small, chance has nowhere to go. It remains visible, violent, and easy to mistake for meaning.
+
+This is why sample size changes strategy. It does not merely make a number more or less precise. It changes what kind of object the number is. At high count, a rate can be evidence of an underlying pattern. At low count, the same rate may be little more than a relabeled event. "One out of four customers churned" is a fact. "Twenty-five percent churn" is the same fact wearing the costume of a stable metric.
+
+Small-n business lives on the wrong side of that condition. Four deals a year. Twelve customers. One sponsor. The dashboard still calculates, but the calculation no longer carries the same authority. The rate, average, trend, or ranking may be arithmetically correct and still fail as evidence, because there are too few repeated, comparable, independent events underneath it.
 
 ## The Most Dangerous Equation
+
+The mathematical relationship is simple and unforgiving: uncertainty shrinks only with the square root of the count.
 
 The square root matters because it makes the relationship sharply nonlinear: certainty improves very slowly as counts grow, and deteriorates very quickly as they shrink. A coin shows the whole effect. Across a thousand flips, heads reliably lands near half. Across ten flips, anywhere from three to seven heads is unremarkable. The flips are equally random in both cases; only the count changed, and with it, everything the total can tell you. In one direction, this explains why large companies can predict their own behavior so well. A bank with four million checking accounts loses roughly twelve thousand of them in a typical month and can state that figure before the month begins; no one knows which customers will leave, but the total is dependable to within a few hundred, because four million individual accidents cancel into a stable rate. Nearly all of modern management assumes this favorable direction: A/B tests, forecasts, conversion funnels, Six Sigma, the dashboard itself. Statisticians would say the bank operates at large n.
 
@@ -187,7 +197,7 @@ That question is uncomfortable because it exposes judgment. A manager can say "t
 
 Both reflexes come from avoiding that exposure.
 
-False certainty disguises judgment as measurement. It takes a belief about a named case and gives it the costume of a dashboard fact. False neutrality commits the opposite error. It sees that the case cannot be measured cleanly, so it refuses to state a probability at all. But the belief does not disappear. It moves into adjectives: "strong," "soft," "risky," "committed," "upside." Then it moves into decisions: hiring plans, board forecasts, escalation calls, and spend commitments.
+False certainty disguises judgment as measurement. It takes a belief about a named case and presents it as a dashboard fact. False neutrality commits the opposite error. It sees that the case cannot be measured cleanly, so it refuses to state a probability at all. But the belief does not disappear. It moves into adjectives: "strong," "soft," "risky," "committed," "upside." Then it moves into decisions: hiring plans, board forecasts, escalation calls, and spend commitments.
 
 There is no long run in which Greenfield renews 60 percent of the time; it renews once, or not, and any probability you attach to it can only be a statement of belief. Small n does not remove probability from management. It removes the hiding place.
 
