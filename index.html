@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small-n Management — Peter Gratzke</title>
+    <meta name="description" content="A practical operating system for leading when every decision is critical, every person is essential, and averages mislead.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --text: #1c1c1c;
+            --text-secondary: #5c5c5c;
+            --text-tertiary: #8a8a8a;
+            --bg: #f7f6f3;
+            --surface: #ffffff;
+            --accent: #1a3a28;
+            --accent-hover: #0f2a1c;
+            --accent-light: #e8f0eb;
+            --border: #e2e0db;
+            --border-light: #eceae6;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.06);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.06), 0 2px 4px rgba(0,0,0,0.04);
+            --shadow-lg: 0 8px 24px rgba(0,0,0,0.08), 0 4px 8px rgba(0,0,0,0.04);
+            --radius: 10px;
+            --serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+            --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--serif);
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* ── Hero ── */
+        .hero {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 100px 32px 72px;
+            text-align: center;
+        }
+
+        .hero-label {
+            font-family: var(--sans);
+            font-size: 0.75em;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 24px;
+        }
+
+        .hero h1 {
+            font-family: var(--serif);
+            font-size: 3.2em;
+            font-weight: 600;
+            letter-spacing: -0.025em;
+            line-height: 1.1;
+            margin-bottom: 12px;
+        }
+
+        .hero .subtitle {
+            font-size: 1.25em;
+            color: var(--text-secondary);
+            font-style: italic;
+            font-weight: 400;
+            margin-bottom: 40px;
+        }
+
+        .hero .tagline {
+            font-size: 1.12em;
+            line-height: 1.85;
+            color: var(--text);
+            max-width: 520px;
+            margin: 0 auto 44px;
+        }
+
+        .hero .author {
+            font-family: var(--sans);
+            font-size: 0.9em;
+            color: var(--text-secondary);
+            margin-bottom: 44px;
+            font-weight: 400;
+        }
+
+        /* ── Buttons ── */
+        .buy-btn {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            font-family: var(--sans);
+            font-size: 1em;
+            font-weight: 600;
+            padding: 16px 52px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            box-shadow: var(--shadow-sm);
+            letter-spacing: 0.01em;
+        }
+
+        .buy-btn:hover {
+            background: var(--accent-hover);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-1px);
+        }
+
+        .buy-note {
+            font-family: var(--sans);
+            font-size: 0.82em;
+            color: var(--text-tertiary);
+            margin-top: 14px;
+        }
+
+        /* ── Section wrapper ── */
+        .section {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 64px 32px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 36px;
+        }
+
+        .section-header h2 {
+            font-family: var(--serif);
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .section-header p {
+            font-family: var(--sans);
+            font-size: 0.9em;
+            color: var(--text-secondary);
+        }
+
+        /* ── Divider ── */
+        .divider {
+            max-width: 760px;
+            margin: 0 auto;
+            border: none;
+            border-top: 1px solid var(--border-light);
+        }
+
+        /* ── What's inside ── */
+        .toc {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2px;
+            background: var(--border-light);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .toc-item {
+            background: var(--surface);
+            padding: 24px 28px;
+            display: flex;
+            align-items: baseline;
+            gap: 20px;
+        }
+
+        .toc-chapter {
+            font-family: var(--sans);
+            font-size: 0.75em;
+            font-weight: 600;
+            color: var(--text-tertiary);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            flex-shrink: 0;
+            min-width: 80px;
+        }
+
+        .toc-content {
+            flex: 1;
+        }
+
+        .toc-title {
+            font-weight: 600;
+            font-size: 1.02em;
+            margin-bottom: 4px;
+        }
+
+        .toc-desc {
+            font-family: var(--sans);
+            font-size: 0.85em;
+            color: var(--text-secondary);
+            line-height: 1.55;
+        }
+
+        /* ── Tools grid ── */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .tool-card {
+            background: var(--surface);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius);
+            padding: 24px 24px 20px;
+            box-shadow: var(--shadow-sm);
+            transition: box-shadow 0.2s ease;
+        }
+
+        .tool-card:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        .tool-card strong {
+            display: block;
+            font-family: var(--sans);
+            font-size: 0.88em;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: var(--text);
+        }
+
+        .tool-card span {
+            font-family: var(--sans);
+            font-size: 0.83em;
+            color: var(--text-secondary);
+            line-height: 1.55;
+        }
+
+        /* ── Pull quote ── */
+        .pull-quote {
+            max-width: 560px;
+            margin: 0 auto;
+            padding: 48px 32px;
+            text-align: center;
+        }
+
+        .pull-quote blockquote {
+            font-size: 1.35em;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 1.6;
+            color: var(--text);
+            position: relative;
+        }
+
+        .pull-quote blockquote::before {
+            content: '\201C';
+            font-size: 3em;
+            color: var(--border);
+            position: absolute;
+            top: -20px;
+            left: -24px;
+            line-height: 1;
+        }
+
+        /* ── Preview ── */
+        .preview-block {
+            background: var(--surface);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius);
+            padding: 48px 44px;
+            margin-bottom: 28px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .preview-block h3 {
+            font-size: 1.35em;
+            font-weight: 600;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .preview-block h4 {
+            font-size: 1.08em;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 14px;
+        }
+
+        .preview-block p {
+            margin-bottom: 18px;
+            font-size: 1em;
+            line-height: 1.8;
+        }
+
+        .preview-block p:last-child {
+            margin-bottom: 0;
+        }
+
+        .preview-fade {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .preview-fade::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 160px;
+            background: linear-gradient(transparent, var(--surface));
+            border-radius: 0 0 var(--radius) var(--radius);
+            pointer-events: none;
+        }
+
+        .continue-reading {
+            text-align: center;
+            margin-top: -4px;
+            margin-bottom: 16px;
+        }
+
+        .continue-reading a {
+            font-family: var(--sans);
+            font-size: 0.92em;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 24px;
+            border: 1px solid var(--accent);
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            display: inline-block;
+        }
+
+        .continue-reading a:hover {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        /* ── Author ── */
+        .author-section {
+            text-align: center;
+        }
+
+        .author-section p {
+            font-family: var(--sans);
+            font-size: 0.9em;
+            color: var(--text-secondary);
+            max-width: 540px;
+            margin: 0 auto;
+            line-height: 1.75;
+        }
+
+        /* ── Bottom CTA ── */
+        .bottom-cta {
+            text-align: center;
+            padding: 64px 32px 56px;
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .bottom-cta .cta-text {
+            font-size: 1.2em;
+            font-style: italic;
+            margin-bottom: 32px;
+            color: var(--text);
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 32px;
+        }
+
+        /* ── Footer ── */
+        footer {
+            text-align: center;
+            padding: 32px 24px 48px;
+            font-family: var(--sans);
+            font-size: 0.78em;
+            color: var(--text-tertiary);
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 640px) {
+            .hero {
+                padding: 64px 24px 48px;
+            }
+
+            .hero h1 {
+                font-size: 2.2em;
+            }
+
+            .hero .subtitle {
+                font-size: 1.05em;
+            }
+
+            .section {
+                padding: 48px 24px;
+            }
+
+            .preview-block {
+                padding: 32px 24px;
+            }
+
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .toc-item {
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            .toc-chapter {
+                min-width: unset;
+            }
+
+            .pull-quote blockquote {
+                font-size: 1.15em;
+            }
+
+            .pull-quote blockquote::before {
+                position: static;
+                display: block;
+                margin-bottom: -12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ── Hero ── -->
+<div class="hero">
+    <p class="hero-label">A Book by Peter Gratzke</p>
+    <h1>Small-n Management</h1>
+    <p class="subtitle">Operating When Every Decision Is the Only One</p>
+    <p class="tagline">
+        Most management advice assumes you have the protection of averages.<br>
+        This book assumes you don't.
+    </p>
+    <a href="https://buy.stripe.com/REPLACE_WITH_YOUR_LINK" class="buy-btn">Buy the Book &mdash; PDF</a>
+    <p class="buy-note">Instant download. No DRM.</p>
+</div>
+
+<hr class="divider">
+
+<!-- ── What's inside ── -->
+<section class="section">
+    <div class="section-header">
+        <h2>What's Inside</h2>
+        <p>Four chapters. One operating system.</p>
+    </div>
+    <div class="toc">
+        <div class="toc-item">
+            <span class="toc-chapter">Chapter 1</span>
+            <div class="toc-content">
+                <div class="toc-title">Why Sample Size Changes Strategy</div>
+                <div class="toc-desc">Diagnose whether your decision lives in a large-n or small-n world. The three forces that drive small-n risk.</div>
+            </div>
+        </div>
+        <div class="toc-item">
+            <span class="toc-chapter">Chapter 2</span>
+            <div class="toc-content">
+                <div class="toc-title">Reasoning When Rates Lie</div>
+                <div class="toc-desc">A five-step method for making judgment visible: priors, mechanism evidence, updating, scenarios, and calibration.</div>
+            </div>
+        </div>
+        <div class="toc-item">
+            <span class="toc-chapter">Chapter 3</span>
+            <div class="toc-content">
+                <div class="toc-title">Decision-Making When You Can't Diversify</div>
+                <div class="toc-desc">How to size commitments so one bad outcome doesn't end the game. The Decision Stack and Decision Gate.</div>
+            </div>
+        </div>
+        <div class="toc-item">
+            <span class="toc-chapter">Chapter 4</span>
+            <div class="toc-content">
+                <div class="toc-title">The Operational Inversion</div>
+                <div class="toc-desc">Build an operating system for resilience: Coverage Index, Spike Protocols, and the Quarterly Resilience Audit.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="divider">
+
+<!-- ── Tools ── -->
+<section class="section">
+    <div class="section-header">
+        <h2>Practical Tools You Can Use Tomorrow</h2>
+    </div>
+    <div class="tools-grid">
+        <div class="tool-card">
+            <strong>Small-n Diagnostic</strong>
+            <span>Identify whether your decision needs large-n tools or small-n reasoning.</span>
+        </div>
+        <div class="tool-card">
+            <strong>Decision Brief</strong>
+            <span>A one-page artifact: prior, named mechanisms, scenarios, triggers, action.</span>
+        </div>
+        <div class="tool-card">
+            <strong>Decision Gate</strong>
+            <span>Six questions every high-consequence commitment must pass before approval.</span>
+        </div>
+        <div class="tool-card">
+            <strong>Coverage Index</strong>
+            <span>Audit structural health across revenue, talent, infrastructure, and coupling.</span>
+        </div>
+    </div>
+</section>
+
+<hr class="divider">
+
+<!-- ── Pull quote ── -->
+<div class="pull-quote">
+    <blockquote>
+        &ensp;Losing one customer isn't 25% churn.<br>It's losing Jennifer.
+    </blockquote>
+</div>
+
+<hr class="divider">
+
+<!-- ── Preview ── -->
+<section class="section">
+    <div class="section-header">
+        <h2>Read the Preview</h2>
+        <p>The full Preface and the opening of Chapter 1.</p>
+    </div>
+
+    <div class="preview-block">
+        <h3>Preface</h3>
+
+        <p>This book was born out of a single monthly business review.</p>
+
+        <p>I was leading a small, specialized team inside a major technology company. Our job was to support the company's most strategic and complex deals. Like every team in a data-obsessed culture, we measured everything. Our performance was tracked on a dashboard of metrics, reviewed by senior leadership every month.</p>
+
+        <p>In this particular meeting, a senior leader pointed to a bright red number on the screen. "Your month-over-month performance in Germany dipped 94%," he said. "We need to understand what went wrong."</p>
+
+        <p>The number was correct, but the conclusion was not. What went "wrong" was nothing. My team in Germany was responsible for just four massive, company-defining deals per year. If one of those deals closed in March and none happened to close in April, the metric would, of course, show a catastrophic drop. The number was mathematically accurate but factually meaningless. It was a data point of one, masquerading as a trend.</p>
+
+        <p>In that moment, I realized I was living in a different universe from the executives on the call. They were managing with the law of large numbers, where statistics tell a reliable story. I was managing with the law of small numbers, where a single event can create seismic-level variance and statistics mislead.</p>
+
+        <p>This realization sent me searching for a playbook. I went to the business section of the bookstore, looking for guides on how to manage in a high-stakes, low-volume world. I found nothing. Most of the management advice I found assumes you have the protection of averages. This book assumes you don't.</p>
+
+        <p>My world (and likely your world) has none of that protection. It's a world where every person is essential, every decision is critical, and every mistake has an outsized impact. It's a world where one person's mood can change the energy of the entire team, and where losing a single client can feel like an extinction-level event.</p>
+
+        <p>This book is the playbook for that world. It is not about how to act like a smaller version of a big company. It is about how to operate effectively when the standard toolkit fails you: when averages mislead, forecasts fail, and one event can reshape everything. It provides a new language to describe your environment and a practical operating system for navigating it.</p>
+
+        <p>A note on examples: this book draws on three kinds of material. Some examples come from my direct operating experience; details have been changed but the situations are real. Some are composites, patterns I have seen repeated across teams and companies, assembled into a single illustrative scenario. And some are hypothetical math examples used to demonstrate a statistical or probabilistic point. Where a story reads like a case study, it is a composite unless stated otherwise. The patterns are real; the specific characters are not.</p>
+    </div>
+
+    <div class="preview-block preview-fade">
+        <h3>Chapter 1: Why Sample Size Changes Strategy</h3>
+
+        <p>There are two fundamentally different worlds of management, and the tools that make you successful in one can fail in the other. The dividing line isn't industry, business model, or company stage. It's something far more fundamental: sample size.</p>
+
+        <p>When your critical denominators are large (hundreds of customers, thousands of users, dozens of suppliers) the world becomes predictable. Variance smooths out. Averages stabilize. Aggregate rates become decision-grade. You can A/B test, forecast, optimize, and manage by dashboard.</p>
+
+        <p>When your critical denominators are small (four major customers, twelve enterprise deals, three key relationships) the world operates under different physics. Variance dominates. Averages become unreliable. Aggregate rates stop being decision-grade. Every event becomes system-sized, every mistake compounds, every decision carries significant weight.</p>
+
+        <p>This isn't a difference in difficulty. It's a difference in kind. And most leaders are operating across both worlds simultaneously without realizing they need completely different playbooks for each.</p>
+
+        <p>Most managers have been handed a large-number toolkit for a small-number world. They feel data-driven and rigorous. They're using everything business school taught them. But science requires matching your methods to your environment. Until you can identify which world you're in and toggle between approaches, you're applying the wrong framework to at least half your decisions.</p>
+
+        <p>The cost of that mismatch shows up everywhere. Startups spend their last six months of runway on A/B tests that will never reach statistical significance. Executives approve major investments from three high-variance data points. Product teams explain 40% quarterly swings as performance changes when the movement is mostly arithmetic. Customer success teams build churn models on a few dozen customers when the real issue is that one champion is about to leave. The danger is not that leaders ignore data. The danger is that they use data in forms their environment cannot support.</p>
+
+        <p>To see the mismatch clearly, start with the two worlds these tools were built for.</p>
+
+        <h4>The Two Worlds</h4>
+
+        <p><strong>Large-n: The World of Predictability</strong></p>
+
+        <p>A consumer bank with 4 million checking accounts sees 12,000 customers close accounts last month, a churn rate of 0.3%. This month, 11,800 left. Next month will probably be 11,000 to 13,000. The operations team doesn't know which customers will leave, but they know how many with remarkable precision.</p>
+
+        <p>This predictability emerges from the law of large numbers. Flip a coin ten times, you might get seven heads. Flip it ten thousand times, you'll get very close to 5,000 heads. Individual flips remain random, but the aggregate becomes reliable.</p>
+
+        <p>Large-n environments enable the entire toolkit of modern management: A/B testing, Six Sigma, dashboard KPIs, machine learning models. Business schools teach this world almost exclusively. The implicit promise: collect enough data, and you can manage anything. The promise is real, if you actually have enough data.</p>
+
+        <p><strong>Small-n: The World of Discrete Events</strong></p>
+
+        <p>You run customer success for an enterprise team with four customers. Last Tuesday, your largest customer, accounting for 40% of revenue, didn't renew. The champion who'd bought your vision, Jennifer, left six months earlier. Her replacement, David, a newly installed CFO who wanted to consolidate vendors, didn't return your calls. Despite quarterly business reviews, executive alignment meetings, and a substantial discount offer, the customer churned.</p>
+
+        <p>At the board meeting, the slide shows 25% quarterly churn. One director frowns. "That churn number puts us far outside the benchmarks. Best-in-class enterprise SaaS companies hold annual churn to five to seven percent. What's driving this?"</p>
+
+        <p>The question misses the point entirely. It wasn't a churn rate in any meaningful sense. There was Jennifer who left, and David who didn't care about your category. Large SaaS firms with 400 customers can analyze patterns, run retention models, and build playbooks because no single departure defines the picture. With four customers, you manage four specific relationships with named humans at named companies. Losing one isn't 25% churn. It's losing Jennifer.</p>
+
+        <p>This is small-n: a world where individual events dominate, variance overwhelms signal, and averages become unreliable. At small-n, your dashboard doesn't show the business. It shows the math of tiny denominators pretending to be trends.</p>
+
+        <p>The shift from large-n to small-n is not a binary switch from "data" to "intuition." It's a shift in which methods produce decision-grade information. And the distinction doesn't apply to whole organizations. Amazon has hundreds of millions of customers (pure large-n for retail operations) but its relationship with antitrust regulators is small-n. One DOJ lawsuit could reshape the company. The question is never "which mode am I in?" It's "which mode does this specific decision require?"</p>
+
+        <h4>The Three Forces</h4>
+
+        <p>Small-n risk is driven by three distinct forces. They often appear together, but they are not the same problem and they require different responses.</p>
+
+        <p><strong>Thin Count</strong>: You have too few observations for rates or averages to stabilize. With four customers, one departure moves your rate by 25%. You're not watching business trends. You're watching variance amplified by tiny denominators.</p>
+
+        <p><strong>Concentration</strong>: One unit carries a disproportionate share of the outcome. With four customers, one loss eliminates 25% of revenue. Individual shocks don't fade into background noise. They define the background.</p>
+
+        <p><strong>Coupling</strong>: Units that appear independent fail together. Your three "independent" suppliers all ship through the same port. What looks like diversification is actually shared exposure. What you thought was three independent risks is actually one risk wearing three masks.</p>
+    </div>
+
+    <div class="continue-reading">
+        <a href="https://buy.stripe.com/REPLACE_WITH_YOUR_LINK">Continue reading &rarr;</a>
+    </div>
+</section>
+
+<hr class="divider">
+
+<!-- ── Author ── -->
+<section class="section author-section">
+    <div class="section-header">
+        <h2>About the Author</h2>
+    </div>
+    <p>Peter Gratzke has held Innovation and Transformation leadership roles at Amazon Web Services (AWS), where he led specialized teams focused on helping strategic enterprise customers realize business outcomes from emerging technologies. He previously served as a Director at MetLife Asia's Innovation Centre and held roles at Deloitte and the World Economic Forum. He holds an MSc in Philosophy of the Social Sciences from the London School of Economics and Political Science.</p>
+</section>
+
+<hr class="divider">
+
+<!-- ── Bottom CTA ── -->
+<section class="bottom-cta">
+    <p class="cta-text">The management playbook for leaders who can't hide behind averages.</p>
+    <a href="https://buy.stripe.com/REPLACE_WITH_YOUR_LINK" class="buy-btn">Buy the Book &mdash; PDF</a>
+    <p class="buy-note">Instant download. No DRM.</p>
+</section>
+
+<footer>
+    &copy; 2026 Peter Gratzke. All rights reserved.
+</footer>
+
+</body>
+</html>
