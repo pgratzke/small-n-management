@@ -55,15 +55,31 @@ And when you do not know which world you are in, start there.
 
 # Chapter 1: Why Sample Size Changes Strategy
 
-Statistics began as an answer to practical uncertainty: how to divide the stakes of an unfinished game, how to price risk, how to reason when the outcome is not yet known. From the beginning, its power came from repetition. One throw of dice is noise. Many throws reveal a pattern. One customer loss is a story. Many losses become a rate. The great promise of statistics is that enough single events, counted together, can become usable knowledge.
+The red number in the introduction was not a bad number. That is what made it dangerous.
 
-That promise has a condition attached, and the condition is sample size.
+It had been calculated correctly. The dashboard had done what dashboards are built to do: take events from the business, compress them into a metric, and color the result. One deal closed in March. None closed in April. The machine turned that sequence into a 94 percent decline.
 
-The Germany meeting from the introduction can be explained by one mathematical relationship: the reliability of a measured number depends on how many observations produced it. When the count is large, chance has room to cancel itself. When the count is small, chance has nowhere to go. It remains visible, violent, and easy to mistake for meaning.
+Nothing in that chain was false. The error lived one layer deeper.
 
-This is why sample size changes strategy. It does not merely make a number more or less precise. It changes what kind of object the number is. At high count, a rate can be evidence of an underlying pattern. At low count, the same rate may be little more than a relabeled event. "One out of four customers churned" is a fact. "Twenty-five percent churn" is the same fact wearing the costume of a stable metric.
+A dashboard is not just arithmetic. It is a statistical instrument, and every statistical instrument carries an assumption about the world underneath it. It assumes that the events being compressed are numerous enough, comparable enough, and independent enough for the compression to preserve meaning. When that assumption holds, statistics is one of the most powerful inventions human beings have for managing uncertainty. It lets us see patterns no individual case can show.
 
-Small-n business lives on the wrong side of that condition. Four deals a year. Twelve customers. One sponsor. The dashboard still calculates, but the calculation no longer carries the same authority. The rate, average, trend, or ranking may be arithmetically correct and still fail as evidence, because there are too few repeated, comparable, independent events underneath it.
+That is the old promise of probability and statistics. Probability began with practical uncertainty: games of chance, priced risks, decisions that had to be made before the outcome was known. Statistics extended the same logic into evidence: how much can we infer from the cases we have seen? The two disciplines meet in a simple managerial act: looking at a group of events and asking whether the pattern is real, or whether we are only seeing noise.
+
+Repetition is what gives the answer force. One throw of dice is noise; many throws reveal the behavior of the dice. One customer loss is a story; many losses can become a churn rate. One delayed deal is a biography; many delayed deals can become a sales-cycle distribution. The individual events do not become irrelevant. They become less dominant. Their accidents start to cancel, and the aggregate becomes a useful guide.
+
+But cancellation is not magic. It has a price, and the price is count.
+
+This is the condition that modern management often forgets because, in large organizations, it is often satisfied. A bank with millions of accounts can estimate monthly churn without knowing which specific customers will leave. A retailer with millions of transactions can detect a small conversion change. A support operation with hundreds of thousands of tickets can know whether response time is drifting. In those settings, the statistic is not merely a summary. It is evidence of an underlying pattern.
+
+Small-n business lives near the boundary where that stops being true.
+
+At low count, the individual event does not disappear into the pattern. It remains visible inside the number. Four deals a year are not a smaller version of four thousand deals. Twelve customers are not a miniature customer base. One sponsor leaving, one procurement delay, one contract pulled across a quarter boundary, one anchor customer changing budget owners: these are not tiny disturbances around a stable metric. They are named events, and at low count the named event still has its fingerprints all over the statistic.
+
+That is why sample size changes strategy. It does not merely make a number more or less precise. It changes what kind of object the number is. At high count, a rate can be evidence of an underlying pattern. At low count, the same rate may be little more than a relabeled event. "One out of four customers churned" is a fact. "Twenty-five percent churn" is the same fact wearing the costume of a stable metric.
+
+The Germany meeting lived on the wrong side of that boundary. The number was arithmetically correct and still failed as evidence, because there were too few repeated, comparable, independent events underneath it. The dashboard had not lied. It had applied a large-n instrument to a small-n reality.
+
+The first task is to understand the boundary itself.
 
 ## The Most Dangerous Equation
 
