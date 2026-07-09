@@ -42,7 +42,7 @@ The third chapter turns uncertainty into commitment: how much to bet when you ca
 
 The fourth chapter moves from decisions to systems: how to build resilience before the shock, because on the day your largest customer leaves or your sole-source vendor fails, survival is no longer for sale.
 
-The final chapter returns to the room where the book began: how to translate a small-n reality upward to executives, boards, and investors who mostly live in large-n.
+The final chapter returns to the room where the book began: how to translate a small-n reality upward to executives, boards, and investors who mostly live in large n.
 
 The book is not an argument against data. It is an argument against using instruments outside the conditions that make them truthful.
 
@@ -344,7 +344,7 @@ A venture capitalist invests in thirty companies. Twenty-five return zero, and t
 
 You are one of the thirty companies. You have a portfolio of one. If the fund loses you, the fund continues. You do not.
 
-This is the quiet flaw in most of the decision frameworks leaders carry. Portfolio theory, expected value, risk-adjusted returns: all of them assume you can spread your bets across many attempts. In small-n you cannot. You get one company, one executive team, one chance at this quarter's pipeline. Expected value describes the average across repetitions. You do not live in the average. You live on one specific path, in sequence, with no reset. The average may be attractive while the most likely single outcome is disappointing, or while one plausible outcome is fatal.
+This is the quiet flaw in most of the decision frameworks leaders carry. Portfolio theory, expected value, risk-adjusted returns: all of them assume you can spread your bets across many attempts. In small n you cannot. You get one company, one executive team, one chance at this quarter's pipeline. Expected value describes the average across repetitions. You do not live in the average. You live on one specific path, in sequence, with no reset. The average may be attractive while the most likely single outcome is disappointing, or while one plausible outcome is fatal.
 
 The arithmetic is unforgiving even in friendly cases. With six enterprise deals at a 67 percent close rate, the expected value is four deals. The probability of closing exactly four is 33 percent. The probability of closing three or fewer is 31 percent: nearly one time in three, the plan built on the expected value faces a meaningful shortfall. Treat the expected value as a plan rather than a probability and you have not made a forecast. You have made a promise the arithmetic never offered.
 
@@ -354,7 +354,7 @@ The core heuristic comes from Kelly-style thinking. The Kelly criterion is a for
 
 I will not pretend this discipline is natural. It is not natural to me. Years ago I sat in a workshop with the leadership of a national grocery chain, pitching an offering my organization had never delivered. We had the framework, the references from adjacent work, and a room of executives leaning in. What we did not have was a single completed engagement of the kind I was describing, and I did not say so. We won the work.
 
-That is the detail to sit with: we won. The gap between what I had implied and what we could deliver had to be closed in flight, and the closing was paid for in the one asset this chapter will tell you never to put on the table. Trust held, narrowly, which made it easy to remember the episode as a win. It took a colleague I respected, writing the criticism down where I could not ignore it, for me to see the bet I had actually made: the downside was a currency I could not replace, the upside was one engagement, and I had sized it without noticing I was betting at all. The most dangerous bets at small-n are not the ones you oversize. They are the ones you never notice you are making.
+That is the detail to sit with: we won. The gap between what I had implied and what we could deliver had to be closed in flight, and the closing was paid for in the one asset this chapter will tell you never to put on the table. Trust held, narrowly, which made it easy to remember the episode as a win. It took a colleague I respected, writing the criticism down where I could not ignore it, for me to see the bet I had actually made: the downside was a currency I could not replace, the upside was one engagement, and I had sized it without noticing I was betting at all. The most dangerous bets at small n are not the ones you oversize. They are the ones you never notice you are making.
 
 The rest of this chapter builds the machinery that catches the sizing error before it gets funded: six questions, assembled one or two at a time, and then run against the proposal still waiting in that room.
 
@@ -366,7 +366,7 @@ If this fails in the worst plausible way, what is lost? And after that loss, can
 
 Run the proposal through them. If Apex and Cavendish both churn, the company loses nearly half its revenue. In that world, the three new hires do not create resilience. They accelerate cash burn, and runway drops from twelve months to seven. At seven months with a halved revenue base, the company cannot carry the new headcount and still have time to rebuild pipeline. The bet, at full size, fails the second question. Not because the upside was miscalculated. Because the downside was never priced.
 
-Notice the order. In a large-n environment, analysis starts with the expected return, because no single outcome threatens the system; downside is a line item, smoothed by volume. At small-n, analysis starts at the other end. First find the worst plausible world, then ask whether you are still a going concern inside it. Only then is the upside worth discussing. Upside is a reason to take a survivable bet. It is never a reason to take an unsurvivable one.
+Notice the order. In a large-n environment, analysis starts with the expected return, because no single outcome threatens the system; downside is a line item, smoothed by volume. At small n, analysis starts at the other end. First find the worst plausible world, then ask whether you are still a going concern inside it. Only then is the upside worth discussing. Upside is a reason to take a survivable bet. It is never a reason to take an unsurvivable one.
 
 And some things should never have been on the table at all. Trust. Runway. Regulatory standing. Production integrity. The handful of relationships that hold the revenue base together. These are not bets to be sized but stakes you refuse to play, because once lost they cannot be replaced in time. For the four-customer company, that means the executive sponsorship budget for Apex is not cut while the evaluation is live. Greenfield's relationship does not go on autopilot because it looks safe. The customer success lead covering Cavendish is not reassigned to a growth initiative. The question for this category is not "can we afford the protection?" It is "what happens if we do not spend this and the risk materializes?" They are structural integrity decisions, funded before the growth conversation begins.
 
@@ -374,7 +374,7 @@ And some things should never have been on the table at all. Trust. Runway. Regul
 
 The third question: can we unwind this in weeks, or does the error persist for months or years?
 
-Two bets of identical size are not identical bets. A senior executive hire that turns out wrong takes twelve to eighteen months to reverse. A three-month consulting engagement with the same person costs a fraction to unwind. A full platform migration that fails wastes a year of engineering; a paid pilot on one workflow tests the same thesis in weeks. A nationwide launch that misreads the market burns cash in every region; a single-city rollout burns less and teaches more. Reversibility is the hidden multiplier on every number in the plan. The same dollar figure can be a survivable experiment or a permanent wound, and nothing on the invoice tells you which.
+Two bets of identical size are not identical bets. A senior executive hire that turns out wrong takes more than a year to reverse. A three-month consulting engagement with the same person costs a fraction to unwind. A full platform migration that fails wastes a year of engineering; a paid pilot on one workflow tests the same thesis in weeks. A nationwide launch that misreads the market burns cash in every region; a single-city rollout burns less and teaches more. Reversibility is the hidden multiplier on every number in the plan. The same dollar figure can be a survivable experiment or a permanent wound, and nothing on the invoice tells you which.
 
 I watched the permanent version at a German pharmaceutical company. They had spent fourteen months and several million euros building an enterprise data platform. By the time my team was engaged, the architecture was fixed, the vendor was contracted, and the first modules were in production. The platform had been designed and approved at the infrastructure level: IT leadership had specified it, procurement had negotiated it, and the board had funded it.
 
@@ -382,13 +382,13 @@ No one had spoken to the users.
 
 I was the first person to sit with the heads of R&D, Quality Control, Finance, and Regulatory Affairs and ask what they actually needed from a data platform. R&D wanted to run exploratory queries across clinical trial datasets that changed structure weekly. Quality Control needed real-time deviation tracking with audit trails that met GxP requirements. Finance and Regulatory had lists just as specific and just as unmet. The platform they had built was a general-purpose data lake optimized for storage efficiency and batch processing. It could do none of these things without significant additional engineering, in some cases fundamental rearchitecture. The vendor contract had three years remaining. The sunk cost was real and the switching cost was enormous. The business units did what business units do: they built workarounds, shadow systems, manual exports, spreadsheets. The platform became expensive infrastructure with no constituents.
 
-Here is the detail that matters for this chapter. The failure was not vendor selection. It was sequencing. The information about what four named people needed was discoverable in a week, for approximately nothing. The commitment was a three-year contract and a fixed architecture. They paid the irreversible price first and gathered the free information second. At small-n, that order kills. Reversibility is not a pleasant property of good decisions. It is the currency you use to buy information you do not yet have.
+Here is the detail that matters for this chapter. The failure was not vendor selection. It was sequencing. The information about what four named people needed was discoverable in a week, for approximately nothing. The commitment was a three-year contract and a fixed architecture. They paid the irreversible price first and gathered the free information second. At small n, that order kills. Reversibility is not a pleasant property of good decisions. It is the currency you use to buy information you do not yet have.
 
 ## Pay for Information, Not Exposure
 
 The fourth question: what is the smallest commitment that teaches us something real?
 
-This is the constructive version of the reversibility question. The principle is real options thinking: pay a small, reversible cost to learn the maximum possible amount before committing the large, irreversible component. The option is not free, but it is dramatically cheaper than the mistake, and at small-n, where each mistake is large relative to the system, staging is the fastest way to learn without risking structural damage.
+This is the constructive version of the reversibility question. The principle is real options thinking: pay a small, reversible cost to learn the maximum possible amount before committing the large, irreversible component. The option is not free, but it is dramatically cheaper than the mistake, and at small n, where each mistake is large relative to the system, staging is the fastest way to learn without risking structural damage.
 
 Staging has a reputation as the cautious path, the thing ambition tolerates. The reputation is backwards. A sports media group I worked with wanted to transform how a niche league engaged its fans: a vision spanning seven seasons of broadcast technology, fan products, and athlete experience. The executives were prepared to sign the vision. What the budget actually signed was one season and two small products: a fan engagement feature inside an existing app, and a prototype tool that cut the time to prepare multilingual commentary from hours to minutes. Both were designed to be shut down cheaply. Neither had to be: the app's downloads doubled season over season, and the prototype earned its production build. The second season was funded by the first season's evidence, not by the original enthusiasm. Seven-year vision, one-season commitments. The roadmap never had to be believed. It only had to be renewed.
 
@@ -404,7 +404,7 @@ The cheapest thing money can buy is a future decision. A backup vendor relations
 
 Then there are the offensive bets themselves: positions where the loss is fixed and affordable and the gain is not. A slice of engineering capacity on a speculative project. A small, self-funded pilot in an adjacent market. The working rule: no single bet in this category takes more than 10 percent of operational cash, so that a miss leaves 90 percent of your resources and all of your options intact. The number is a setting, not a law; the principle is not negotiable.
 
-I can tell you what this looks like over time, because I ran a version of the portfolio myself. Over roughly two years, on borrowed hours and no budget, I built three repeatable offerings for my team, each aimed at a pattern I kept seeing in customer work. Each cost about the same: a few weeks of capacity, one pilot customer, and the risk of polite indifference. Capped downside, three times over. One of them returned nearly eight times the other two combined. And I could not have told you in advance which one. That is the honest mechanics of upside at small-n: the evidence is too thin to rank your own bets, so you stop trying to pick the winner. You cap every downside, take several shots, and let one asymmetric payoff carry the portfolio. The two modest bets were not mistakes. They were the price of owning the one that paid.
+I can tell you what this looks like over time, because I ran a version of the portfolio myself. Over roughly two years, on borrowed hours and no budget, I built three repeatable offerings for my team, each aimed at a pattern I kept seeing in customer work. Each cost about the same: a few weeks of capacity, one pilot customer, and the risk of polite indifference. Capped downside, three times over. One of them returned nearly eight times the other two combined. And I could not have told you in advance which one. That is the honest mechanics of upside at small n: the evidence is too thin to rank your own bets, so you stop trying to pick the winner. You cap every downside, take several shots, and let one asymmetric payoff carry the portfolio. The two modest bets were not mistakes. They were the price of owning the one that paid.
 
 ## The Terminal Exception
 
@@ -479,7 +479,7 @@ But the finding that changed how I operate was quieter than any of the eleven. N
 
 This chapter scales that lesson from a portfolio of engagements to the company itself, because the same physics governs the week your largest customer gives notice. You can run Chapter 3's gate perfectly and still take the hit: a well-sized bet still loses sometimes. What happens next is not a decision you make next. Whether there is slack to absorb the blow, a protocol to execute instead of a meeting to improvise, a backup with a tested failover path: every variable that will matter in that week was set in the quarters before it, mostly by default. The crisis is not a test you take in the moment. It is a test you sat months earlier and forgot about. On the day the shock arrives, survival is no longer for sale.
 
-What follows is the operating loop that buys it in advance: measure the structure, fund the weak points, script the responses you cannot afford to improvise, and learn from every event so the map stays true. None of this is exclusive to small-n companies; any organization with concentrated dependencies would benefit. But at small-n the loop is not optional. At the end of the chapter, a twelve-client software company runs the whole loop under fire, and it is the difference between losing its largest customer and losing everything.
+What follows is the operating loop that buys it in advance: measure the structure, fund the weak points, script the responses you cannot afford to improvise, and learn from every event so the map stays true. None of this is exclusive to small-n companies; any organization with concentrated dependencies would benefit. But at small n the loop is not optional. At the end of the chapter, a twelve-client software company runs the whole loop under fire, and it is the difference between losing its largest customer and losing everything.
 
 ## Measure Structure, Not Output
 
@@ -533,7 +533,7 @@ In practice the rule funds three things. A redundancy budget institutionalizes "
 
 Some Reds cannot be bought down. The whale customer is 22 percent of revenue, and no redundancy budget fixes that this quarter. The sole-source certification cannot be duplicated by Friday. For the exposures you cannot retire, you buy the other thing: the response.
 
-In large-n, when systems fail, teams "figure it out." In small-n, the system lacks the redundancy to absorb improvisation's cognitive load. When crisis hits, cognitive load must drop and decision speed must increase, and those two requirements point the same direction.
+In large n, when systems fail, teams "figure it out." In small n, the system lacks the redundancy to absorb improvisation's cognitive load. When crisis hits, cognitive load must drop and decision speed must increase, and those two requirements point the same direction.
 
 The inversion: pre-decide under calm, execute under pressure.
 
@@ -547,7 +547,7 @@ Most of my team's twenty-three fixes were exactly this: checklists and decision-
 
 ## Ten Lessons from One Event
 
-The loop has one more station, because measurements decay. The map of Reds and Yellows you drew in January is wrong by June: a dependency has crept in, a backup has quietly rotted, a coupling exists that nobody thought to draw. Events are how the territory corrects the map, and at small-n you cannot afford to wait for many of them. In large-n, you wait for statistical significance. In small-n, waiting for ten failures to understand the system is too slow and too costly.
+The loop has one more station, because measurements decay. The map of Reds and Yellows you drew in January is wrong by June: a dependency has crept in, a backup has quietly rotted, a coupling exists that nobody thought to draw. Events are how the territory corrects the map, and at small n you cannot afford to wait for many of them. In large n, you wait for statistical significance. In small n, waiting for ten failures to understand the system is too slow and too costly.
 
 The inversion: extract ten lessons from one event, not one lesson from ten events. My team's review extracted its lessons from a portfolio read in bulk. The sharper version of the discipline works on a single event.
 
@@ -725,7 +725,7 @@ That is the last inversion this book has to offer. The tools you built to manage
 
 # Conclusion: Choose Your Denominator
 
-Everything in this book reduces to three realities. At small-n, variance dominates signal. Because you cannot diversify your bets, you must diversify your ability to absorb failure. And because the people who review you live in large-n, your reality does not travel upward unless you translate it.
+Everything in this book reduces to three realities. At small n, variance dominates signal. Because you cannot diversify your bets, you must diversify your ability to absorb failure. And because the people who review you live in large n, your reality does not travel upward unless you translate it.
 
 This week, execute one item from each category:
 
