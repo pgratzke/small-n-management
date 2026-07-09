@@ -744,23 +744,6 @@ And then notice one last thing, because it is the reason this book was never abo
 The large world runs itself. The small one is the job. It always was.
 
 
-# The First Week: A Field Guide
-
-Everything in this book reduces to three realities. At small n, variance dominates signal. Because you cannot diversify your bets, you must diversify your ability to absorb failure. And because the people who review you live in large n, your reality does not travel upward unless you translate it.
-
-Start this week:
-
-**Audit your dashboard.** Identify your four most-watched metrics. For each one, ask: "Is this tied to a specific, named event that actually happened this month?" If the answer is no, replace it with an event log or a count of critical units.
-
-**Identify your single point of failure.** Map your dependencies. Which customer represents more than 20% of revenue? Which supplier has no backup? Which critical process depends on a single point of failure? Pick one and spend this week building actual redundancy: sign the backup vendor, document the undocumented dependency, start the relationship-building with a second sponsor inside that account.
-
-**Write your first Spike Protocol.** Name the single most damaging event that could hit your business in the next 90 days. Write a one-page response plan: who does what in the first 48 hours, what work stops, what resources shift, who has decision authority without waiting for consensus. Put it somewhere the team can find it.
-
-**Send your first pre-quarter one-pager.** Before the next reporting cycle, write one page for whoever reviews you: your critical units by name, each with mechanism and trigger; every rate with its numerator and denominator; the band each number is expected to land in; your structural health as a count of Reds and Yellows. Pre-register the variance before it arrives, while the explanation still counts as foresight.
-
-The artifacts behind these actions, the diagnostic, the decision brief, the decision gate, the Coverage Index, the Spike Protocol, and the upward one-pager, are the book in usable form. Copy this page.
-
-
 # About the Author
 
 Peter Gratzke has held Innovation and Transformation leadership roles at Amazon Web Services (AWS), where he led specialized teams focused on helping strategic enterprise customers realize business outcomes from emerging technologies. His work has often sat at the intersection of large, data-driven organizations and small, high-stakes teams, relationships, and deals: the small-n environment this book describes.

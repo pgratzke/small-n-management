@@ -30,7 +30,6 @@ SECTION_MARKERS = {
     "Chapter 4: Building the System Before the Shock": "The worst number I have ever owned",
     "Chapter 5: Translating Small-n Upward": "The first four chapters built an operating system",
     "Conclusion: The Small World Is the Job": "It has been a year since I began writing",
-    "The First Week: A Field Guide": "Everything in this book reduces to three realities",
     "About the Author": "Peter Gratzke has held Innovation",
     "A Note on Examples": "draws on four kinds of material",
     "Notes": "These notes are deliberately light",
