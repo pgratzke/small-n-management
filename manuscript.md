@@ -748,6 +748,13 @@ Sometimes the answer is to grow the denominator: more and smaller customers, mor
 Choose your denominator. Then manage it like you chose it.
 
 
+# About the Author
+
+Peter Gratzke has held Innovation and Transformation leadership roles at Amazon Web Services (AWS), where he led specialized teams focused on helping strategic enterprise customers realize business outcomes from emerging technologies. His work has often sat at the intersection of large, data-driven organizations and small, high-stakes teams, relationships, and deals: the small-n environment this book describes.
+
+He previously served as a Director at MetLife Asia's Innovation Centre, where he originated, shaped, and delivered digital transformation initiatives. Earlier in his career, he held roles at Deloitte and the World Economic Forum. He holds an MSc in Philosophy of the Social Sciences from the London School of Economics and Political Science. He lives in Madrid, Spain, and advises senior leaders on strategy, transformation, and operating in high-consequence environments.
+
+
 # A Note on Examples
 
 This book draws on four kinds of material. Some examples come from my direct operating experience; details have been changed, but the situations are real. Some are composites: patterns I have seen repeated across teams and companies, assembled into a single illustrative scenario. Some are hypothetical math examples used to demonstrate a statistical or probabilistic point. And a few cases, told under their real names, are drawn from the public record and sourced in the notes. Everything else that reads like a case study is a composite unless stated otherwise. The patterns are real; the specific characters are not.
@@ -819,10 +826,3 @@ These notes are deliberately light: sources for the named cases, the mathematics
 # Statement on the Use of AI
 
 Generative AI tools were used extensively during the drafting and revision of this manuscript: drafting and restructuring prose, testing logical consistency, refining frameworks, and stress-testing the argument for clarity and precision. The ideas, judgments, conclusions, and final editorial decisions remain the author's own, and full responsibility for the work rests with the author.
-
-
-# About the Author
-
-Peter Gratzke has held Innovation and Transformation leadership roles at Amazon Web Services (AWS), where he led specialized teams focused on helping strategic enterprise customers realize business outcomes from emerging technologies. His work has often sat at the intersection of large, data-driven organizations and small, high-stakes teams, relationships, and deals: the small-n environment this book describes.
-
-He previously served as a Director at MetLife Asia's Innovation Centre, where he originated, shaped, and delivered digital transformation initiatives. Earlier in his career, he held roles at Deloitte and the World Economic Forum. He holds an MSc in Philosophy of the Social Sciences from the London School of Economics and Political Science. He lives in Madrid, Spain, and advises senior leaders on strategy, transformation, and operating in high-consequence environments.

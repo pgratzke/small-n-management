@@ -30,10 +30,10 @@ SECTION_MARKERS = {
     "Chapter 4: Building the System Before the Shock": "The worst number I have ever owned",
     "Chapter 5: Translating Small-n Upward": "The first four chapters built an operating system",
     "Conclusion: Choose Your Denominator": "Everything in this book reduces to three realities",
+    "About the Author": "Peter Gratzke has held Innovation",
     "A Note on Examples": "draws on four kinds of material",
     "Notes": "These notes are deliberately light",
     "Statement on the Use of AI": "used extensively during the drafting and revision",
-    "About the Author": "Peter Gratzke has held Innovation",
 }
 
 
