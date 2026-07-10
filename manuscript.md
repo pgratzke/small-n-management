@@ -788,4 +788,4 @@ These notes are deliberately light: sources for the named cases, the mathematics
 
 # Statement on the Use of AI
 
-Generative AI tools were used extensively during the drafting and revision of this manuscript: drafting and restructuring prose, testing logical consistency, refining frameworks, and stress-testing the argument for clarity and precision. The ideas, judgments, conclusions, and final editorial decisions remain the author's own, and full responsibility for the work rests with the author.
+The ideas, arguments, frameworks, and stories in this book are my own, drawn from my operating experience, and every editorial judgment was mine. I used AI tools in drafting and revising the prose and in stress-testing the argument's logic and consistency. Responsibility for every claim rests with me.

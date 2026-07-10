@@ -33,7 +33,7 @@ SECTION_MARKERS = {
     "About the Author": "Peter Gratzke has held Innovation",
     "A Note on Examples": "draws on four kinds of material",
     "Notes": "These notes are deliberately light",
-    "Statement on the Use of AI": "used extensively during the drafting and revision",
+    "Statement on the Use of AI": "every editorial judgment was mine",
 }
 
 
