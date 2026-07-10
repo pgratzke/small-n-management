@@ -24,7 +24,7 @@ PDF = "small-n_management.pdf"
 # Distinct opener text used to locate each section's first page in pass 1.
 SECTION_MARKERS = {
     "Introduction: The Red Number": "born in a single monthly business review",
-    "Chapter 1: Why Sample Size Changes Strategy": "The red number in the introduction",
+    "Chapter 1: Why Sample Size Changes Strategy": "the machine that made the number",
     "Chapter 2: Reasoning When Rates Lie": "The board meets Thursday",
     "Chapter 3: Decision-Making When You Can't Diversify": "The proposal is on the table",
     "Chapter 4: Building the System Before the Shock": "The worst number I have ever owned",
