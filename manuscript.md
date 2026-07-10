@@ -12,7 +12,7 @@ The number was correct.
 
 That was the problem.
 
-But what had gone wrong was nothing. My team in Germany was responsible for just four massive deals per year. If one of those deals closed in March and none happened to close in April, the dashboard would show a collapse. The business had not collapsed, and the team had not stopped performing. One large event had moved across a calendar boundary, and the metric had converted that movement into a crisis. The number was mathematically accurate and factually meaningless: a data point of one, masquerading as a trend.
+But what had gone wrong was nothing. My team in Germany was responsible for just four massive deals per year. If one of those deals closed in March and nothing comparable closed in April, the dashboard would show a collapse. The business had not collapsed, and the team had not stopped performing. One large event had moved across a calendar boundary, and the metric had converted that movement into a crisis. The number was mathematically accurate and factually meaningless: a data point of one, masquerading as a trend.
 
 I knew that in the room. I also knew how weak it sounded. "The number is misleading" is what every underperforming team says when the dashboard turns red. The executive had no reason to treat my objection as special. From his altitude, he was looking across dozens of teams, most of them large enough for monthly metrics to mean something. A 94% drop in one of those rows would have been evidence of a real problem. In my row, it was evidence of a small denominator.
 
